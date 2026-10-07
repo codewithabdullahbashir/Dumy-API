@@ -1,8 +1,8 @@
-const UserAPI = "https://jsonplaceholder.typicode.com/users";
+import { API } from "./api.js";
 const container = document.getElementById("users-container");
 
 async function getUsers() {
-  const response = await fetch(UserAPI);
+  const response = await fetch(API.users);
   const users = await response.json();
 
   let html = "";
