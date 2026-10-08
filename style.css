@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    margin: 0;
+}
+
+.header {
+    background: white;
+    padding: 40px 7%;
+    border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+    margin: 5px 0;
+    font-size: 38px;
+}
+
+.small-title {
+    color: #6366f1;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #777;
+    margin-top: 8px;
+}
+
+#users-container {
+    padding: 40px 7%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.user-link {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+}
+
+.user-link:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.user-link h2 {
+    margin: 0 0 15px;
+}
+
+.user-link p {
+    margin: 10px 0;
+    color: #666;
+    overflow-wrap: anywhere;
+}
+
+.user-link::after {
+    content: "View Profile →";
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    #users-container {
+        padding: 25px 20px;
+        grid-template-columns: 1fr;
+    }
+}
