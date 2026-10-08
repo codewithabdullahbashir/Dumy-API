@@ -9,7 +9,7 @@ async function getUsers() {
 
   for (const user of users) {
     html += `
-      <a class="user-link" href="user.html?userId=${user.id}">
+      <a class="user-link" href="user-profile.html?userId=${user.id}">
         <h2>${user.name}</h2>
         <p class="username">${user.username}</p>
         <p class="email">${user.email}</p>
